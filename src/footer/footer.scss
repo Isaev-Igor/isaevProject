@@ -1,0 +1,40 @@
+.footer{
+  background-color: #eeeeee;
+  height: 70px;
+  margin-top: 50px;
+  padding: 0 48px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.page-footer{
+  padding-left: 250px;
+
+}
+.page-footer__link:hover {
+  color: #b20600;
+  border-bottom: 1px solid red;
+}
+
+.page-footer__item:after {
+  padding-left: 20px;
+  content: "|";
+}
+.page-footer__list {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+.page-footer__item {
+  margin-right: 12px;
+  white-space: nowrap;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
