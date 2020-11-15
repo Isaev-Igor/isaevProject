@@ -33,7 +33,11 @@
                     </ul>
                 </nav>
                 <div class="button_currency">
-                    <a class="btn btn-3"><span class="btn-text">Купить EPUB/PDF</span></a>
+                    <div class = "clock">
+                        <span class = "hours"></span>:
+                        <span class = "minutes"></span>:
+                        <span class = "seconds"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,14 +66,21 @@
             <li class="hidden-menu_list"><a href="#">Комментарии </a></li>
             <li class="hidden-menu_list">Поделиться</li>
             <ul class="icons">
-                <li><a href="#" class="icons__link icons--twitter" aria-label="ссылка на фейсбук"></a></li>
-                <li><a href="#" class="icons__link icons--facebook" aria-label="ссылка на гугл"></a></li>
-                <li><a href="#" class="icons__link icons--vk" aria-label="ссылка на вконтакте"></a></li>
+                <li><a href="https://www.facebook.com/" class="icons__link icons--twitter" aria-label="ссылка на фейсбук"></a></li>
+                <li><a href="https://www.facebook.com/" class="icons__link icons--facebook" aria-label="ссылка на гугл"></a></li>
+                <li><a href="https://www.facebook.com/" class="icons__link icons--vk" aria-label="ссылка на вконтакте"></a></li>
             </ul>
-            <li class="hidden-menu_list"><a href="">Редактировать на GitHub </a></li>
+            <li class="hidden-menu_list"><a href="https://github.com/Isaev-Igor/isaevProject">Редактировать на GitHub </a></li>
         </ul>
     </div>
 
+    <div class = "table">
+
+        <button id="create" onclick="addTable()">Create table</button>
+        <label><input type="text" id="rows">Количество строк</label>
+        <label><input type="text" id="columns">Количество столбцов</label>
+
+    </div>
 
     <main class="container">
             <div class="main__text">
@@ -334,6 +345,7 @@
         </ul>
     </div>
 </footer>
-
+<script src = "table/table.js"></script>
+<script src = "clock/clock.js"></script>
 </body>
 </html>
