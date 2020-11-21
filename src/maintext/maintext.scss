@@ -7,9 +7,15 @@
   flex-wrap: wrap;
   margin-left: 400px;
   max-width: 800px;
-  display: none;
-
+  display: block;
 }
+.main__text-none{
+  flex-wrap: wrap;
+  margin-left: 400px;
+  max-width: 800px;
+  display: none;
+}
+
 .main__header--caption{
   color: black;
 }
@@ -30,3 +36,6 @@
   width: 800px;
   padding: 20px;
 }
+
+
+

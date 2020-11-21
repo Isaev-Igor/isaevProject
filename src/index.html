@@ -34,9 +34,7 @@
                 </nav>
                 <div class="button_currency">
                     <div class = "clock">
-                        <span class = "hours"></span>:
-                        <span class = "minutes"></span>:
-                        <span class = "seconds"></span>
+                        <span class = "hours"></span> : <span class = "minutes"></span> : <span class = "seconds"></span>
                     </div>
                 </div>
             </div>
@@ -53,10 +51,11 @@
             <span class="third"></span>
         </label>
         <ul class="hidden-menu" >
+            <li class="hidden-menu_list table-link"></li>
             <li class="hidden-menu_list">Разделы</li>
             <li class="hidden-menu_list"><a href="">Введение</a></li>
-            <li class="hidden-menu_list">Навигация по уроку</li>
-            <li class="hidden-menu_list"><a href="#chto_takoye_javascript">Что такое JavaScript?</a></li>
+            <li class="hidden-menu_list"><a class="create-table" href="#">Сформировать таблицу</a> </li>
+            <li class="hidden-menu_list"><a class="btn-reset-color" href="#">Замена цвета кнопок</a></li>
             <li class="hidden-menu_list"><a href="#chto_mojet_javascript">Что может JavaScript в браузере? </a></li>
             <li class="hidden-menu_list"><a href="#chto_nemojet_javascript">Что НЕ может JavaScript в браузере? </a>
             </li>
@@ -75,12 +74,27 @@
     </div>
 
     <div class = "table">
+        <button class = "btn-table" id="create"">Create table</button>
 
-        <button id="create" onclick="addTable()">Create table</button>
-        <label><input type="text" id="rows">Количество строк</label>
-        <label><input type="text" id="columns">Количество столбцов</label>
+        <div class="table-input">
+            <label><input type="text" id="rows">Количество строк</label>
+            <label><input type="text" id="columns">Количество столбцов</label>
+        </div>
+
 
     </div>
+
+    <div class="btn-color">
+        <button class="test btn-color-style">Кнопка 1</button>
+        <button class="test1 btn-color-style">Кнопка 2</button>
+        <button class="test2 btn-color-style">Кнопка 3</button>
+    </div>
+
+
+
+
+
+
 
     <main class="container">
             <div class="main__text">
@@ -347,5 +361,6 @@
 </footer>
 <script src = "table/table.js"></script>
 <script src = "clock/clock.js"></script>
+<script src = "btn/btn_color.js"></script>
 </body>
 </html>

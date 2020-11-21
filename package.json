@@ -29,14 +29,6 @@
     "webpack:w": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ismyloven/Oxygensite.git"
-  },
-  "author": "Nail Ismailov",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ismyloven/Oxygensite/issues"
-  },
-  "homepage": "https://github.com/ismyloven/Oxygensite#readme"
+  "author": "Isaev",
+  "license": "ISC"
 }

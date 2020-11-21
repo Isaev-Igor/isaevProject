@@ -1,21 +1,53 @@
 td:hover {
-    background: green;
-    padding: 15px;
+  background: #3CB371;
 }
 
 
-.table{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
+.table {
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
-table{
-    margin: auto;
+.table-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.table-input {
+  display: flex;
+  flex-direction: column;
+}
 
+input {
+  margin: 3px 10px;
+}
+
+table {
+  margin: auto;
+  border: 1px solid #3CB371;
+}
+
+.btn-table {
+  background: #3CB371;
+  font-size: 20px;
+  color: #e1e0de;
+  border-radius: 5px;
+  border: none;
+  padding: 14px 30px;
+  margin: 15px;
+}
+
+.btn-table:hover {
+  background: #3CB371;
+  color: black;
+  border-radius: 5px;
+}
+
+.btn-table:active, .btn-table:focus {
+  outline: none;
+}
 
 
 

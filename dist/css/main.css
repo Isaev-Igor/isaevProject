@@ -430,23 +430,6 @@ a {
   right: 0;
   z-index: -1; }
 
-.button_currency {
-  display: inline-block;
-  white-space: nowrap;
-  border-radius: 34px; }
-
-.btn-3:hover:after {
-  height: 100px;
-  width: 175px;
-  border-radius: 20px;
-  background: #e05850; }
-
-.btn-text {
-  padding: 10px; }
-
-.btn-text:hover {
-  color: white; }
-
 * {
   box-sizing: border-box; }
 
@@ -623,6 +606,12 @@ a {
   flex-wrap: wrap;
   margin-left: 400px;
   max-width: 800px;
+  display: block; }
+
+.main__text-none {
+  flex-wrap: wrap;
+  margin-left: 400px;
+  max-width: 800px;
   display: none; }
 
 .main__header--caption {
@@ -679,25 +668,71 @@ li {
   text-align: -webkit-match-parent; }
 
 td:hover {
-  background: green;
-  padding: 15px; }
+  background: #3CB371; }
 
 .table {
+  display: none;
+  justify-content: center;
+  align-items: center; }
+
+.table-show {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding-top: 50px; }
+  align-items: center; }
+
+.table-input {
+  display: flex;
+  flex-direction: column; }
+
+input {
+  margin: 3px 10px; }
 
 table {
-  margin: auto; }
+  margin: auto;
+  border: 1px solid #3CB371; }
+
+.btn-table {
+  background: #3CB371;
+  font-size: 20px;
+  color: #e1e0de;
+  border-radius: 5px;
+  border: none;
+  padding: 14px 30px;
+  margin: 15px; }
+
+.btn-table:hover {
+  background: #3CB371;
+  color: black;
+  border-radius: 5px; }
+
+.btn-table:active, .btn-table:focus {
+  outline: none; }
 
 .clock {
-  font-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid red;
-  border-radius: 36px;
+  font-size: 18px;
+  border: 2px solid #3CB371;
+  border-radius: 6px;
   background: white;
   margin: 10px;
-  padding: 10px 25px; }
+  padding: 7px 20px;
+  color: black; }
+
+.clock:hover {
+  background: #3CB371; }
+
+.btn-color {
+  display: none;
+  justify-content: center;
+  align-items: center; }
+
+.btn-color-show {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.btn-color-style {
+  margin: 10px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px; }
