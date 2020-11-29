@@ -1,12 +1,13 @@
 const defaults = {
     selectors: {
-        color: 'button_first',
-        background: 'button_second',
-        text: 'button_change_text'
+        red: 'button_first',
+        green: 'button_second',
+        yellow: 'button_third'
     },
     classes: {
-        new_color: 'new_color',
-        background_red: 'background_red'
+        background_red: 'background_red',
+        background_green: 'background_green',
+        background_yellow: 'background_yellow'
     },
     dictionary: {
         buttonChange: 'Button Change',
@@ -14,33 +15,30 @@ const defaults = {
     }
 }
 
-const wraper = document.querySelector("body");
+const wraper = document.querySelector(".color-btn");
 
 wraper.addEventListener('click', handler);
 
 function handler(event) {
 
-    const colorCss = defaults.classes.new_color;
-    const backgroundCss = defaults.classes.background_red;
-    const newBackground = defaults.selectors.background;
-    const newColor = defaults.selectors.color;
-    const newText = defaults.selectors.text;
-    const addButtonOriginal = defaults.dictionary.buttonOriginal;
-    const addButtonChange = defaults.dictionary.buttonChange;
-    let targetText = event.target.textContent;
+    const backgroundRed = defaults.classes.background_red;
+    const backgroundGreen = defaults.classes.background_green;
+    const backgroundYellow = defaults.classes.background_yellow;
+    const newColorRed = defaults.selectors.red;
+    const newColorGreen = defaults.selectors.green;
+    const newColorYellow = defaults.selectors.yellow;
 
-    if(event.target.classList.contains(newColor)) {
-        event.target.classList.toggle(colorCss);
+
+    if(event.target.classList.contains(newColorRed)) {
+        event.target.classList.toggle(backgroundRed);
     }
 
-    if(event.target.classList.contains(newBackground)) {
-        event.target.classList.toggle(backgroundCss);
+    if(event.target.classList.contains(newColorGreen)) {
+        event.target.classList.toggle(backgroundGreen);
     }
 
-    if(event.target.classList.contains(newText)){
-        event.target.textContent = targetText === addButtonOriginal
-            ? targetText = addButtonChange
-            : targetText = addButtonOriginal;
+    if(event.target.classList.contains(newColorYellow)) {
+        event.target.classList.toggle(backgroundYellow);
     }
 
 }

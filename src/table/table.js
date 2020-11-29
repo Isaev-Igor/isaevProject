@@ -1,5 +1,5 @@
 function addTable() {
-    let body = document.querySelector("body");
+    let createTable = document.querySelector(".table");
     let numRows = document.getElementById("rows");
     let numColumns = document.getElementById("columns");
     let firstTable = document.querySelector("table");
@@ -7,8 +7,8 @@ function addTable() {
     let columns = numColumns.value;
 
 
-    table = document.createElement("table"),
-        table.setAttribute("width", 200);
+    table = document.createElement("table");
+    table.setAttribute("width", 200);
     table.setAttribute("border", 2);
     table.setAttribute("height", 200);
     for (let i = 0; i < columns; i++) {
@@ -22,9 +22,9 @@ function addTable() {
     }
 
     if (firstTable == null) {
-        return body.appendChild(table);
+        return createTable.appendChild(table);
     } else {
-        var newTable = body.appendChild(table);
+        let newTable = createTable.appendChild(table);
         return document.body.replaceChild(newTable, firstTable);
     }
 }

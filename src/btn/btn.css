@@ -18,11 +18,16 @@
   font-size: 16px;
 }
 
-.new_color{
-  color: red;
-}
 
 
 .background_red{
-  background: pink;
+  background: indianred;
+}
+
+.background_green{
+  background: green;
+}
+
+.background_yellow{
+  background: yellow;
 }
