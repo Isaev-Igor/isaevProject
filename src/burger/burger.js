@@ -8,6 +8,5 @@ document.querySelector(".btn").addEventListener("click", function (e){
         let container = document.querySelector(".container");
         this.classList.add("is-active");
         document.querySelector(".menu").classList.add("nav-active");
-        container.classList.add("body-active");
     }
 })

@@ -71,18 +71,16 @@
             <li><a class="clickLikShowEndlessSlider" href="#">Endless slider</a></li>
             <li><a class="clickLikShowStudents" href="#">Student sheets</a></li>
         </ul>
-            <div class="menu-social">
-                <button><a href="https://twitter.com/ihor_isaiev" target="_blank"><img src="burger/img/twitter.png" alt=""></a>
-                </button>
-                <button><a href="https://www.facebook.com/ISAEVIGORIGOREVICH/" target="_blank"><img
-                        src="burger/img/facebook.png"></a></button>
-                <button><a href="https://vk.com/" target="_blank"><img src="burger/img/vk.png" alt=""></a></button>
-            </div>
+        <div class="menu-social">
+            <button><a href="https://twitter.com/ihor_isaiev" target="_blank"><img src="burger/img/twitter.png" alt=""></a>
+            </button>
+            <button><a href="https://www.facebook.com/ISAEVIGORIGOREVICH/" target="_blank"><img
+                    src="burger/img/facebook.png"></a></button>
+            <button><a href="https://vk.com/" target="_blank"><img src="burger/img/vk.png" alt=""></a></button>
+        </div>
         <ul class="link-style">
-            <li><a href="https://github.com/Isaev-Igor">Профиль на GitHub</a></li>
+            <li><a href="https://github.com/Isaev-Igor" target="_blank">Профиль на GitHub</a></li>
         </ul>
-
-
 
 
     </div>
@@ -119,13 +117,63 @@
 
 <section class="students">
 
-    <form action="">
+    <fieldset>
+        <legend>Форма для заполнения</legend>
+    <form onsubmit="return false;">
 
-        <input type="text" name="name" value="" placeholder="Укажите имя студента">
-        <button type="submit">Отправить</button>
+        <div class="students-input">
+            <label for="first-name">Имя</label>
+            <input class="first-name" type="text" name="first-name" value="" placeholder="Имя">
+        </div>
+
+        <div class="students-input">
+            <label for="last-name">Фамилия</label>
+            <input class="last-name" type="text" name="last-name" value="" placeholder="Фамилия">
+        </div>
+
+        <div class="students-input">
+            <label for="age">Возраст</label>
+            <input class="age" type="number" name="age" value="" placeholder="Возраст">
+        </div>
+
+        <div class="students-input">
+            <label for="course">Курс</label>
+            <input class="course" type="number" name="course" value="" placeholder="Курс">
+        </div>
+
+        <div class="students-input">
+            <label for="start-study">Дата поступления</label>
+            <input class="start-study" type="date" name="start-study" value="" placeholder="Дата поступления">
+        </div>
+
+        <div class="students-input">
+            <label for="end-study">Дата окончания</label>
+            <input class="end-study" type="date" name="end-study" value="" placeholder="Дата окончания">
+        </div>
+
+
+        <button class="btn-edit"> Редактировать</button>
+        <button class="btn-delete"> Удалить</button>
+        <button class="btn-save"> Сохранить</button>
 
     </form>
-    
+    </fieldset>
+    <div class="students-table">
+        <table class="students-table-sheet">
+            <tr>
+                <th>Имя</th>
+                <th>Фамилия</th>
+                <th>Возраст</th>
+                <th>Курс</th>
+                <th>Дата поступления</th>
+                <th>Дата окончания</th>
+            </tr>
+        </table>
+    </div>
+
+
+
+
 </section>
 
 <main class="main-container">

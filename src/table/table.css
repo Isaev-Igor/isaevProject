@@ -18,14 +18,13 @@ td:hover {
   flex-direction: column;
 }
 
-input {
+.table input {
   margin: 3px 10px;
 }
-
-table {
-  margin: auto;
-  border: 1px solid #3CB371;
+.table table{
+  margin: 20px;
 }
+
 
 .btn-table {
   max-width: 250px;

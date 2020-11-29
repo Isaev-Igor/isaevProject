@@ -4,7 +4,28 @@
 
 .students-show{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #3CB371;
+    margin-top: 20px;
+}
+
+.students-input{
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.students-show label{
+    margin-right: 10px;
+}
+
+.students-table, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.students-table-sheet{
+    margin-top: 20px;
 }
