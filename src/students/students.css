@@ -1,0 +1,10 @@
+.students{
+    display: none;
+}
+
+.students-show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3CB371;
+}

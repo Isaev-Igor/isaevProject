@@ -3,16 +3,13 @@ td:hover {
 }
 
 
-.table {
+.table{
   display: none;
-  justify-content: center;
-  align-items: center;
 }
-
 .table-show {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 50px;
 }
 
 .table-input {

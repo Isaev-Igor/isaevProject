@@ -1,0 +1,31 @@
+.main-container {
+    display: none;
+}
+
+.main-container-show{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+
+.main__header--caption{
+    color: black;
+}
+.main__header {
+    font-weight: bold;
+    font-size: 32px;
+    padding-top: 50px;
+}
+
+.image{
+    max-width: 725px;
+    max-height: 570px;
+}
+
+.main__header--textborder{
+    border: 1px solid darkgrey;
+    max-width: 800px;
+    padding: 20px;
+}
+

@@ -1,33 +1,31 @@
-let hours = document.querySelector('.hours') ;
-let minutes = document.querySelector('.minutes') ;
-let seconds = document.querySelector('.seconds') ;
-
-function time() {
-    let date = new Date;
-    let h = date.getHours() < 10 ? '0'+ date.getHours() : date.getHours();
-    let m = date.getMinutes() < 10 ? '0'+ date.getMinutes() : date.getMinutes();
-    let s = date.getSeconds() < 10 ? '0'+ date.getSeconds() : date.getSeconds();
+function makeTime(event) {
+    const hours = document.querySelector('.hours') ;
+    const minutes = document.querySelector('.minutes') ;
+    const seconds = document.querySelector('.seconds') ;
+    const date = new Date;
+    const showHours = date.getHours() < 10 ? '0'+ date.getHours() : date.getHours();
+    const showMinutes = date.getMinutes() < 10 ? '0'+ date.getMinutes() : date.getMinutes();
+    const showSeconds = date.getSeconds() < 10 ? '0'+ date.getSeconds() : date.getSeconds();
 
     if(start) {
-        hours.innerHTML = `${h}`;
-        minutes.innerHTML = `${m}`;
-        seconds.innerHTML = `${s}`;
+        hours.textContent = `${showHours}`;
+        minutes.textContent = `${showMinutes}`;
+        seconds.textContent = `${showSeconds}`;
         start = false;
     }
 
-    if(s === 59) {
-        minutes.innerHTML = `${m}`;
-        seconds.innerHTML = `${s}`;
+    if(showSeconds === 59) {
+        minutes.textContent = `${showMinutes}`;
+        seconds.textContent = `${showSeconds}`;
     }
 
-    if(m === 59) {
-        hours.innerHTML = `${h}`;
-        minutes.innerHTML = `${m}`;
-        seconds.innerHTML = `${s}`;
+    if(showMinutes === 59) {
+        hours.textContent = `${showHours}`;
+        minutes.textContent = `${showMinutes}`;
+        seconds.textContent = `${showSeconds}`;
     }
 
-    seconds.innerHTML = `${s}`;
-
-
+    seconds.textContent = `${showSeconds}`;
 }
-setInterval(time, start = true, 1000);
+
+setInterval(makeTime, start = true, 1000);

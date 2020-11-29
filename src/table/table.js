@@ -31,14 +31,10 @@ function addTable() {
 
 document.querySelector(".btn-table").addEventListener("click", addTable);
 
+document.querySelector(".clickLikShowTable").addEventListener('click', showTable);
+
 function showTable() {
-    let a = document.querySelector(".main__text");
-    let b = document.querySelector(".table");
-    a.classList.add("main__text-none");
-    a.classList.remove("main__text");
-    b.classList.add("table-show");
-    b.classList.remove("table");
+    document.querySelector(".table").classList.toggle("table-show");
 }
 
-document.querySelector(".create-table").addEventListener("click", showTable);
 

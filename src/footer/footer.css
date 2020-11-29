@@ -1,0 +1,33 @@
+.footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: #eeeeee;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  align-items: center;
+}
+
+.page-footer__list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.page-footer__item{
+  padding: 0 15px;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__item a{
+  text-decoration: none;
+  color: black;
+}
+
+.page-footer__item a:hover{
+  color: #ba1000;
+}

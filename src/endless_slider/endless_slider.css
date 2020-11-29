@@ -1,0 +1,10 @@
+.slider{
+    display: none;
+}
+
+.slider-show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3CB371;
+}

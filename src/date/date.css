@@ -1,0 +1,17 @@
+.date {
+  font-size: 16px;
+  border: 2px solid #3CB371;
+  border-radius: 6px;
+  background: white;
+  margin: 10px;
+  padding: 7px 20px;
+  color: black;
+}
+
+
+
+.date:hover {
+  background: #3CB371;
+}
+
+
