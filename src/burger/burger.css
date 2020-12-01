@@ -21,7 +21,6 @@ body {
 .menu {
 
   width: 320px;
-  margin-left: -260px;
   background: #eee;
   position: relative;
   left: 0;
@@ -33,12 +32,12 @@ body {
 
 
 .body-active {
-  margin-left: 300px;
+  margin-left: -300px;
   transition: all ease 1s;
 }
 
 .nav-active {
-  margin-left: 0;
+  margin-left: -260px;;
   transition: all ease 1s;
 }
 
