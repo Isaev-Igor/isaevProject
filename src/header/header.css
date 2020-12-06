@@ -15,7 +15,6 @@
   display: flex;
   justify-content: start;
   margin-left: 15px;
-
 }
 
 .header-language {
@@ -73,3 +72,86 @@
 }
 
 
+/*бургер меню*/
+.btn-line{
+  display: none;
+}
+
+
+@media (max-device-width: 767px) {
+  .btn-line{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+    box-shadow: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  .btn-line span {
+    display: block;
+    position: absolute;
+    top: 26px;
+    left: 12px;
+    right: 12px;
+    height: 5px;
+    background: #606060;
+  }
+
+  .btn-line span::before, .btn-line span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #606060;
+    content: "";
+  }
+
+  .btn-line span::before {
+    top: -10px;
+  }
+
+  .btn-line span::after {
+    bottom: -10px;
+  }
+  .header-language{
+    display: none;
+  }
+  .header-logo {
+    display: flex;
+    justify-content: start;
+    margin-left: 155px;
+  }
+  .header-menu-mini {
+    display: none;
+    transition: all ease 1s;
+  }
+  .header-menu-list-mini {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .is-active{
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: #f0f0f0;
+    transition: all ease 1s;
+  }
+  .clock{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

@@ -15,11 +15,10 @@ body {
   position: sticky;
   top: 0;
   float: left;
-
+  transition: all ease 1s;
 }
 
 .menu {
-
   width: 320px;
   background: #eee;
   position: relative;
@@ -151,4 +150,17 @@ body {
 
 }
 
+.btn-line{
+  display: none;
+}
 
+.menu-header{
+  display: flex;
+}
+
+@media (max-device-width: 767px) {
+  .menu-hide {
+    margin-left: -320px;;
+    transition: all ease 1s;
+  }
+}

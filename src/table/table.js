@@ -31,10 +31,6 @@ function addTable() {
 
 document.querySelector(".btn-table").addEventListener("click", addTable);
 
-document.querySelector(".clickLikShowTable").addEventListener('click', showTable);
 
-function showTable() {
-    document.querySelector(".table").classList.toggle("table-show");
-}
 
 

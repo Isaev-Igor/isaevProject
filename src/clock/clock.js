@@ -14,12 +14,12 @@ function makeTime(event) {
         start = false;
     }
 
-    if(showSeconds === 59) {
+    if(showSeconds === 60) {
         minutes.textContent = `${showMinutes}`;
         seconds.textContent = `${showSeconds}`;
     }
 
-    if(showMinutes === 59) {
+    if(showMinutes === 60) {
         hours.textContent = `${showHours}`;
         minutes.textContent = `${showMinutes}`;
         seconds.textContent = `${showSeconds}`;

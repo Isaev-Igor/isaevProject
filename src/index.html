@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="students/students.css">
     <link rel="stylesheet" href="endless_slider/endless_slider.css">
     <link rel="stylesheet" href="maintext/maintext.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
@@ -25,6 +26,11 @@
 
     <div class="header">
         <div class="header-container">
+            <div class="menu-header">
+                <button class="btn-line">
+                    <span>menu</span>
+                </button>
+            </div>
             <div class="header-language">
                 <img class="header-language__image" src="header/img/planet.png" alt="">
                 <span>RU</span>
@@ -34,8 +40,8 @@
                 <object type="image/svg+xml" data="https://learn.javascript.ru/img/sitetoolbar__logo_ru.svg"></object>
             </div>
 
-            <div class="header-menu">
-                <ul class="header-menu-list">
+            <div class="header-menu header-menu-mini">
+                <ul class="header-menu-list header-menu-list-mini">
                     <li class="header-menu-list_link"><a href="#">Учебник</a></li>
                     <li class="header-menu-list_link"><a href="#">Курсы</a></li>
                     <li class="header-menu-list_link"><a href="#">Форум</a></li>
@@ -56,20 +62,20 @@
     <div class="header-menu__sticky"></div>
 </header>
 
-<div class="menu-container">
+<div class="menu-container menu-hide">
     <div class="menu">
         <div class="btn-column">
-            <button class="btn btn-line">
+            <button class="btn">
                 <span>Menu</span>
             </button>
         </div>
 
         <ul class="link-style">
-            <li><a class="clickLikShowMainText" href="#">Введение</a></li>
-            <li><a class="clickLikShowTable" href="#">Create table</a></li>
-            <li><a class="clickLikShowButton" href="#">Color button</a></li>
-            <li><a class="clickLikShowEndlessSlider" href="#">Endless slider</a></li>
-            <li><a class="clickLikShowStudents" href="#">Student sheets</a></li>
+            <li class="menu-link"><a class="showMainText" href="#">Введение</a></li>
+            <li class="menu-link"><a class="showTable" href="#">Create table</a></li>
+            <li class="menu-link"><a class="showButton" href="#">Color button</a></li>
+            <li class="menu-link"><a class="showEndlessSlider" href="#">Endless slider</a></li>
+            <li class="menu-link"><a  class="showStudents" href="#">Student sheets</a></li>
         </ul>
         <div class="menu-social">
             <button><a href="https://twitter.com/ihor_isaiev" target="_blank"><img src="burger/img/twitter.png" alt=""></a>
@@ -86,7 +92,7 @@
     </div>
 </div>
 
-<section class="table">
+<section class="table flag">
 
     <button class="btn-table">Create table</button>
 
@@ -98,14 +104,14 @@
 
 </section>
 
-<section class="color-btn">
+<section class="color-btn flag">
 
     <button class="color-btn_change button_first">Button 1</button>
     <button class="color-btn_change button_second">Button 2</button>
     <button class="color-btn_change button_third">Button 3</button>
 </section>
 
-<section class="slider">
+<section class="slider flag">
 
     <div>
 
@@ -114,8 +120,7 @@
     </div>
 </section>
 
-
-<section class="students">
+<section class="students flag">
 
     <fieldset>
         <legend>Форма для заполнения</legend>
@@ -175,7 +180,7 @@
 
 </section>
 
-<main class="main-container">
+<main class="main-container flag">
     <div class="main__text">
         <h1 class="main__header">Введение в JavaScript</h1>
         <div class="main__header--text">
@@ -391,7 +396,13 @@
             <span>|</span>
             <li class="page-footer__item"><a class="page-footer__link" href="#">пользовательское соглашение</a></li>
             <span>|</span>
-            <li class="page-footer__item"><span class="timer"></span></li>
+            <li class="page-footer__item">
+                <div class="timer">
+                    <span class="timerHours"></span> :
+                    <span class="timerMinutes"></span> :
+                    <span class="timerSeconds"></span>
+                </div>
+            </li>
             <div class="date">
                 <span class="weekday"></span>&ensp;<span></span>/<span></span>/<span></span>
             </div>
@@ -411,6 +422,7 @@
 <script src="students/students.js"></script>
 <script src="endless_slider/endless_slider.js"></script>
 <script src="maintext/maintext.js"></script>
+<script src="header/header.js"></script>
 
 
 </body>

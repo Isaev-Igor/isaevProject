@@ -50,7 +50,7 @@ function deleteStudentsData() {
     console.log(element);
     for (let i = 0; i < element.length; i++) {
         if (element[i].checked) {
-            let deleteElement = document.querySelector(`.${element[i].name}`);
+            let deleteElement = document.querySelector(`.${element[i-1].name}`);
             addTr.removeChild(deleteElement);
         }
     }
@@ -60,8 +60,3 @@ buttonDelete.addEventListener("click", deleteStudentsData);
 buttonSave.addEventListener("click", saveStudentsData);
 
 
-document.querySelector(".clickLikShowStudents").addEventListener('click', showTable);
-
-function showTable() {
-    document.querySelector(".students").classList.toggle("students-show");
-}

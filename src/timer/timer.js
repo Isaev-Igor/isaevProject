@@ -1,29 +1,36 @@
-var count = 0;
-var minut = 0;
-var hours = 0;
-var timer = document.querySelector(".timer");
-var counter = setInterval(getTimer, 1000);
+const timer = document.querySelector('.timer');
+const timerHours = document.querySelector('.timerHours');
+const timerMinutes = document.querySelector('.timerMinutes');
+const timerSeconds = document.querySelector('.timerSeconds');
+
+let seconds = 0;
+let minuts = 0;
+let hours = 0;
+
+let counter = setInterval(getTimer, 1000);
 
 function getTimer() {
-    count++;
-    if (count < 10) {
-        count = "0" + count;
+    seconds++;
+    if (seconds < 10) {
+        seconds = "0" + seconds;
     }
 
-    if (count > 60) {
-        minut++;
-        if (minut < 10) minut = "0" + minut;
-        return count = 0;
+    if (seconds > 59) {
+        minuts++;
+        if (minuts < 10) minuts = "0" + minuts;
+        return seconds = 0;
     }
 
-    if (minut > 60) {
+    if (minuts > 59) {
         hours++;
         if (hours < 10) {
             hours = "0" + hours;
-            return minut = 0;
+            return minuts = 0;
         }
     }
-    timer.innerHTML = `${hours}:${minut}:${count}`;
+    timerHours.textContent = `${hours}`;
+    timerMinutes.textContent = `${minuts}`;
+    timerSeconds.textContent = `${seconds}`;
 }
 
 
@@ -42,7 +49,7 @@ function stop() {
 document.addEventListener('keydown', function (event) {
     const key = event.key;
     if (key === "Escape") {
-        count = 0;
+        seconds = 0;
     }
 });
 

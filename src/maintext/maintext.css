@@ -1,12 +1,12 @@
 .main-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 90px;
-
 }
 
 .main__text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
     max-width: 900px;
     padding-left: 80px;
     line-height: 1.3;

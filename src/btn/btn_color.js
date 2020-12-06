@@ -43,9 +43,3 @@ function handler(event) {
 
 }
 
-
-document.querySelector(".clickLikShowButton").addEventListener('click', showTable);
-
-function showTable() {
-    document.querySelector(".color-btn").classList.toggle("color-btn-show");
-}
