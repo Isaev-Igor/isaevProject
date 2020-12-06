@@ -1,7 +1,3 @@
-.main-container {
-    display: flex;
-}
-
 .main__text {
     display: flex;
     justify-content: center;
