@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+            defer
+    ></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="map/map.js">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="btn/btn.css">
     <link rel="stylesheet" href="burger/burger.css">
@@ -75,7 +81,8 @@
             <li class="menu-link"><a class="showTable" href="#">Create table</a></li>
             <li class="menu-link"><a class="showButton" href="#">Color button</a></li>
             <li class="menu-link"><a class="showEndlessSlider" href="#">Endless slider</a></li>
-            <li class="menu-link"><a  class="showStudents" href="#">Student sheets</a></li>
+            <li class="menu-link"><a class="showStudents" href="#">Student sheets</a></li>
+            <li class="menu-link"><a class="showMaps" href="#">Map</a></li>
         </ul>
         <div class="menu-social">
             <button><a href="https://twitter.com/ihor_isaiev" target="_blank"><img src="burger/img/twitter.png" alt=""></a>
@@ -127,17 +134,18 @@
 
 
             </div>
-            <button class="prev" >Назад</button>
-            <button class="next" >Вперед</button>
+            <button class="prev">Назад</button>
+            <button class="next">Вперед</button>
 
         </div>
+    </div>
 </section>
 
 <section class="students flag">
 
     <fieldset>
-        <legend>Форма для заполнения</legend>
-        <form onsubmit="return false;">
+
+        <form>
 
             <div class="students-input">
                 <label for="first-name">Имя</label>
@@ -211,7 +219,8 @@
                 или компиляция для запуска.</p>
             <p>Это отличает JavaScript от другого языка – <a href="https://ru.wikipedia.org/wiki/Java">Java</a>.</p>
             <div class="main-textborder">
-                <div class="main-textborder_img"><img src="maintext/img/info.png" alt=""><h3>Почему <u>Java</u>Script?</h3></div>
+                <div class="main-textborder_img"><img src="maintext/img/info.png" alt="">
+                    <h3>Почему <u>Java</u>Script?</h3></div>
                 <p>Когда JavaScript создавался, у него было другое имя – «LiveScript». Однако,
                     язык Java был очень популярен в то время, и было решено, что позиционирование JavaScript
                     как «младшего брата» Java будет полезно.</p>
@@ -235,7 +244,8 @@
                 тоже будем их использовать. Например, если «функциональность X поддерживается V8», тогда «Х», скорее
                 всего, работает в Chrome и Opera.</p>
             <div class="main-textborder">
-                <div class="main-textborder_img"><img src="maintext/img/info.png" alt=""><h3><span>Как работают движки?</span></h3></div>
+                <div class="main-textborder_img"><img src="maintext/img/info.png" alt="">
+                    <h3><span>Как работают движки?</span></h3></div>
                 <div class="important__content">
                     <p>Движки сложны. Но основы понять легко.</p>
                     <ol>
@@ -398,6 +408,13 @@
 </main>
 
 
+    <div class ="map  flag"></div>
+
+
+
+
+
+
 <footer class="footer">
     <div class="page-footer">
         <ul class="page-footer__list">
@@ -436,6 +453,7 @@
 <script src="endless_slider/endless_slider.js"></script>
 <script src="maintext/maintext.js"></script>
 <script src="header/header.js"></script>
+<script src="map/map.js"></script>
 
 
 </body>

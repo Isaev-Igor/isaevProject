@@ -11,14 +11,14 @@
 }
 
 .students-input{
-    margin: 5px;
+    margin: 15px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
 }
 
-.students-show label{
-    margin-right: 10px;
+.students-input label{
+    margin: 10px 20px;
 }
 
 .students-table, th{

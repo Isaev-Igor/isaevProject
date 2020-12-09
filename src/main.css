@@ -1,6 +1,12 @@
 .show{
     display: flex;
 }
+.showMap{
+    padding: 500px;
+    width: 800px;
+}
 .hide{
     display: none;
 }
+
+
