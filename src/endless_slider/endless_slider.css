@@ -1,29 +1,57 @@
-
-.visibleArea {
-    width: 450px;
-    height: 750px;
-    overflow: hidden;
+.slider-show {
+    display: flex;
+    flex-direction: column;
 }
 
-.newslider {
+
+.visibleArea, .visibleArea2 {
+    position: relative;
+    width: 450px;
+    height: 550px;
+    overflow: hidden;
+
+}
+
+.newslider1, .newslider2 {
     position: relative;
     transition: all ease 1s;
     width: calc(100% * 5);
-    height: 750px;
     display: flex;
     justify-content: start;
     flex-wrap: nowrap;
 }
 
-.newslide {
-    width: 100%;
-    height: 750px;
-}
 
-.newslide img {
+.slide1, .slide2 {
     width: 100%;
-    height: 750px;
     object-fit: cover;
     object-position: 0;
 }
 
+.slide1 img, .slide2 img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0;
+}
+
+.btn-slider {
+    position: fixed;
+    width: 100%;
+    top: 300px;
+    z-index: 1;
+
+}
+
+.prev {
+
+
+}
+
+.next {
+    margin-left: 313px;
+}
+
+
+.spacer {
+    margin: 50px;
+}
